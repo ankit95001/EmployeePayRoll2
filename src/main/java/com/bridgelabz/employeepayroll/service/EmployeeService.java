@@ -69,5 +69,9 @@ public class EmployeeService {
                 employeeDTO.getDepartment()
         );
     }
+    public List<Employee> getEmployeesByDepartment(String department){
+        log.info("Fetching employees from {} department", department);
+        return employeeRepository.findEmployeesByDepartment(department);
+    }
 }
 
