@@ -26,7 +26,7 @@ public class EmployeeDTO {
 
     @NotNull(message = "Start Date is required")
     @PastOrPresent(message = "Start Date must be today or in the past")
-    @JsonFormat(pattern="dd MMM yyyy")
+    @JsonFormat(pattern = "yyyy-MM-dd")
     private LocalDate startDate;
 
     @NotBlank(message = "Note cannot be empty")
